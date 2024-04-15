@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="61ee643e-4254-4e50-864a-d5a03b86f319" name="Changes" comment="Инит. Создан основной класс и базовый метод поллинга.">
-      <change afterPath="$PROJECT_DIR$/tgbotcore/message_filter.py" afterDir="false" />
+    <list default="true" id="61ee643e-4254-4e50-864a-d5a03b86f319" name="Changes" comment="Переход на новую библиотеку. Очистка проекта.">
+      <change beforePath="$PROJECT_DIR$/.idea/tgbotcore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tgbotcore.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tgbotcore/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/tgbotcore/main.py" afterDir="false" />
@@ -28,6 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -37,16 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.test.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/PyProjects/tgbotcore/tgbotcore/test.py&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "Python.test.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "F:/PyProjects/tgbotcore/tgbotcore/test.py",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="tgbotcore" />
@@ -96,11 +100,20 @@
       <option name="project" value="LOCAL" />
       <updated>1713112481879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Переход на новую библиотеку. Очистка проекта.">
+      <option name="closed" value="true" />
+      <created>1713194013522</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713194013522</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Инит. Создан основной класс и базовый метод поллинга." />
-    <option name="LAST_COMMIT_MESSAGE" value="Инит. Создан основной класс и базовый метод поллинга." />
+    <MESSAGE value="Переход на новую библиотеку. Очистка проекта." />
+    <option name="LAST_COMMIT_MESSAGE" value="Переход на новую библиотеку. Очистка проекта." />
   </component>
 </project>
