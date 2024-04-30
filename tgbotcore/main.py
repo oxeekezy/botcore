@@ -1,15 +1,16 @@
 from telegram import Update
-from telegram.ext import Application, ContextTypes, CommandHandler
+from telegram.ext import Application, ContextTypes, CommandHandler, MessageHandler
 
 
 async def _test_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_html(
         'Ok i\'am here!'
     )
+    await update.message.set_reaction(reaction="🗿")
 
 
-def _add_handler(app: Application, handler, trigger_text: str):
-    app.add_handler(CommandHandler(trigger_text, handler))
+def _add_command_handler(app: Application, command_handler, trigger_text: str):
+    app.add_handler(CommandHandler(trigger_text, command_handler))
 
 
 class TgBotCore:
@@ -25,7 +26,7 @@ class TgBotCore:
 
     def add_custom_handlers(self):
         for handler in self._handlers.keys():
-            _add_handler(self._application, self._handlers.get(handler), handler)
+            _add_command_handler(self._application, self._handlers.get(handler), handler)
 
         return self
 
