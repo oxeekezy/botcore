@@ -14,17 +14,22 @@ def _add_handler(app: Application, handler, trigger_text: str):
 
 class TgBotCore:
     _token: str = ''
+    _handlers: dict = None
     _application: Application = None
 
-    def __init__(self, token: str):
+    def __init__(self, token: str, handlers: dict = None):
         self._token = token
+        self._handlers = handlers
+        self._handlers['test'] = _test_handler
+        self._application = Application.builder().token(self._token).build()
+
+    def add_custom_handlers(self):
+        for handler in self._handlers.keys():
+            _add_handler(self._application, self._handlers.get(handler), handler)
+
+        return self
 
     def run(self):
-        app = Application.builder().token(self._token).build()
-        _add_handler(app, _test_handler, 'test')
+        self._application.run_polling()
 
-        app.run_polling()
-
-    def run_with_custom_handlers(self, handlers):
-        pass
 
